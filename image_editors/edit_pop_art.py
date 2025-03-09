@@ -11,7 +11,7 @@ def apply_pop_art_effect(img_path, output_path):
         img = Image.open(img_path).convert('RGB')
 
         # Enhance contrast
-        img = ImageEnhance.Contrast(img).enhance(1.6)
+        img = ImageEnhance.Contrast(img).enhance(1.2)
         # Enhance color
         img = ImageEnhance.Color(img).enhance(1.6)
         # posterize
