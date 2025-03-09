@@ -5,3 +5,4 @@
 ### Available filters:
 1. Black and White
 2. Pop Art
+3. Pencil Sketch
