@@ -1,6 +1,5 @@
 import os
 import cv2
-import numpy as np
 
 
 def apply_pencil_sketch_effect(img_path, output_path):
@@ -12,22 +11,7 @@ def apply_pencil_sketch_effect(img_path, output_path):
         # Read image
         img = cv2.imread(img_path, cv2.IMREAD_COLOR)
 
-        # Increase image contrast
-        # contrast_factor = 2
-        # img =cv2.convertScaleAbs(img, alpha=contrast_factor, beta=0)
-
-        # Sharpen image using sharpening kernel
-        # Sharpening kernel
-        # kernel = np.array([[-1, -1, -1],
-        #                    [-1, 9, -1],
-        #                    [-1, -1, -1]])
-        #
-        # # Apply sharpening filter
-        # gray = cv2.filter2D(img, -1, kernel)
-
-        # Convert to grayscale
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
 
         # Invert the grayscale image
         inverted = cv2.bitwise_not(gray)
